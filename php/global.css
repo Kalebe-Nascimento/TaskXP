@@ -1,0 +1,53 @@
+:root {
+    --primary: #0E31ED; /* Cor principal definida */
+    --secondary: #6E623D; /* Cor secundária definida */
+    --footer: #2e2e2e; /* Cor mais escura para o footer */
+    --background: #f4f4f9; /* Cor de fundo clara */
+  }
+  
+  * {
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--secondary);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary);
+  }
+  
+  a:hover {
+    color: #091bb5; /* Um tom mais escuro ao passar o mouse */
+  }
+  
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+  
+  input, button, textarea {
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: var(--footer);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  
