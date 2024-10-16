@@ -1,0 +1,663 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(135deg, #3C984F, #0e31ed);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilos do cabeçalho (comuns a todas as páginas) */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+  height: 100px;
+  width: auto;
+}
+
+header .menu ul {
+  list-style: none;
+  display: flex;
+}
+
+header .menu ul li {
+  margin-left: 20px;
+}
+
+header .menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header .menu ul li a:hover {
+  color: #0e31ed;
+}
+
+/* Tornar o texto dentro da main branco */
+main {
+  color: white;
+}
+
+/* Estilos do rodapé (comuns a todas as páginas) */
+footer {
+  background-color: #fff;
+  padding: 40px 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+footer a {
+  color: #0e31ed;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .heart {
+  color: red;
+}
+
+/* Ajustes responsivos (comuns a todas as páginas) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .menu ul {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  header .menu ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+}
+
+/*=================================*/
+/* Estilos Específicos de Páginas */
+/*=================================*/
+
+/*----- Página Início -----*/
+.inicio-page main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.inicio-page main .topic {
+  margin-bottom: 40px;
+}
+
+.inicio-page main .topic h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.inicio-page main .topic ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+}
+
+.inicio-page main .topic ol li {
+  margin-bottom: 10px;
+}
+
+.inicio-page main .topic ol li strong {
+  font-weight: bold;
+  color: white;
+}
+
+/*----- Página Cadastro -----*/
+.cadastro-page main {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.cadastro-page main form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-page main form h1 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cadastro-page main form .form-group {
+  margin-bottom: 15px;
+}
+
+.cadastro-page main form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.cadastro-page main form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.cadastro-page main form input:focus {
+  border-color: #0e31ed;
+  outline: none;
+}
+
+.cadastro-page main form button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background-color: #0e31ed;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cadastro-page main form button[type='submit']:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*----- Página Contato -----*/
+.contato-page main {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.contato-page main form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contato-page main form h1 {
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contato-page main form .form-group {
+  margin-bottom: 15px;
+}
+
+.contato-page main form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.contato-page main form input,
+.contato-page main form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+  transition: border-color 0.3s ease;
+}
+
+.contato-page main form input:focus,
+.contato-page main form textarea:focus {
+  border-color: #0e31ed;
+  outline: none;
+}
+
+.contato-page main form button[type='submit'] {
+  width: 100%;
+  padding: 10px;
+  background-color: #0e31ed;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.contato-page main form button[type='submit']:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para a Avaliação por Estrelas */
+.contato-page main form .rating {
+  margin-bottom: 15px;
+}
+
+.contato-page main form .stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.contato-page main form .stars input {
+  display: none;
+}
+
+.contato-page main form .stars label {
+  font-size: 2em;
+  color: #ddd;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.contato-page main form .stars label::before {
+  content: '★';
+}
+
+.contato-page main form .stars input:checked ~ label {
+  color: #ffd700;
+}
+
+.contato-page main form .stars label:hover,
+.contato-page main form .stars label:hover ~ label {
+  color: #ffc700;
+}
+
+/* Estilos do Carrossel */
+
+/* Container do Carrossel */
+.carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+/* Slide do Carrossel */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Cartões de Avaliação Elegantes */
+.carousel-slide .avaliacao {
+  min-width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.carousel-slide .avaliacao:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste da cor do texto nos cards de avaliação */
+.carousel-slide .avaliacao,
+.carousel-slide .avaliacao * {
+  color: #333;
+}
+
+.carousel-slide .avaliacao p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.carousel-slide .avaliacao strong {
+  color: #0e31ed;
+}
+
+.carousel-slide .avaliacao em {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Botões de Navegação do Carrossel */
+/* Botões de Navegação do Carrossel */
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.7); /* Aumentei a opacidade para melhorar a visibilidade */
+  border: none;
+  font-size: 2.5em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10; /* Garantir que fique acima de outros elementos */
+}
+
+
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+
+/* Indicadores de Paginação */
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.pagination .dot.active {
+  background-color: #0e31ed;
+}
+
+/* Foco nos botões para acessibilidade */
+.carousel-button:focus {
+  outline: 2px solid #fff;
+}
+
+/* Ajustes de Responsividade */
+@media screen and (max-width: 600px) {
+  .carousel-slide .avaliacao {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .carousel-button {
+    font-size: 2em;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Estilos para imagens */
+img {
+  width: 100%;
+}
+
+/* Efeito de fade-in */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Ajustes adicionais de responsividade */
+@media screen and (max-width: 1500px) {
+  .cadastro-page main,
+  .contato-page main,
+  .inicio-page main {
+    padding: 0 10px;
+    margin: 10em auto 15em;
+  }
+}
+
+/* index page main color white */
+.inicio-page main {
+  color: white;
+}
+
+/* Cartões de Avaliação Elegantes */
+.carousel-slide .avaliacao,
+.carousel-slide .avaliacao * {
+  color: #333; /* Mudei de branco para um tom escuro */
+}
+
+
+
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+
+  main {
+    margin: 50px auto;
+  }
+
+.cadastro-page main {
+  height: 60vh;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+form h1 {
+  color: #333;
+}
+button {
+  margin-top: 2em;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .cadastro-page footer {
+    position: static;
+    margin-top: 300px;
+  } 
+  
+}
+
+.screen-item {
+  margin: 4em;
+}
+
+
+/* Estilo do título principal da seção de telas do projeto */
+.titulo-taskxp {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  color: #0e31ed; /* Azul para destacar */
+  margin-bottom: 30px;
+}
+
+/* Container das telas do projeto */
+.screens-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Container individual da imagem */
+.image-card {
+  background-color: #ffffff;
+  padding: 0;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 1000px;
+  width: 100%;
+  text-align: center; /* Centraliza a imagem e o título */
+}
+
+/* Efeito de hover para as imagens */
+.image-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo da imagem */
+.image-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+
+}
+
+/* Título da imagem */
+.image-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #0e31ed; /* Azul para destacar */
+  margin-top: 10px;
+}
+
+.screen-item {
+  margin: 20px auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.screen-item p {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.screen-item h2 {
+  margin: 20px auto;
+}
+
+
+/* Estilos do rodapé (comuns a todas as páginas) */
+footer {
+  background-color: white; /* Fundo azul escuro */
+  color: #333; /* Texto branco para contraste */
+  padding: 40px 20px;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-content div {
+  max-width: 300px;
+  margin: 15px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  text-align: left;
+}
+
+.footer-about h2,
+.footer-contact h2,
+.footer-social h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-about p,
+.footer-contact p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.footer-social a {
+  color: #333; /* Cor dourada para destacar os links sociais */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #333;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.footer-bottom a {
+  color: #333; /* Destaque para os links */
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .heart {
+  color: red;
+}
